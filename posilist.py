@@ -1,7 +1,11 @@
-lst = []
+lst= []
+ 
 n = int(input("Enter number of elements : "))
+ 
 for i in range(0, n):
-    lst[i]=int(input())
-    if lst[i]>0:
-        print(lst[i],end=",")
+    ele = int(input())
+    lst.append(ele) # adding the element
 
+for j in lst:
+    if j>=0:
+        print(j, end=" ")
